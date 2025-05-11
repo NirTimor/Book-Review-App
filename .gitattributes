@@ -1,0 +1,6 @@
+*.js linguist-language=JavaScript
+*.jsx linguist-language=JavaScript
+*.ts linguist-language=TypeScript
+*.tsx linguist-language=TypeScript
+server/** linguist-language=Python
+client/** linguist-vendored=false
