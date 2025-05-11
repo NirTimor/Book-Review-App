@@ -1,0 +1,106 @@
+/* Ensure the navbar stays on top */
+.navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Hero Section - Full Width & Under Navbar */
+.hero-section {
+    background: url("../../public/library.jpg") no-repeat center center fixed;
+    background-size: cover;
+    width: 100vw;  
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    margin-top: 56px; 
+    position: relative;
+    z-index: 1;
+}
+
+.container-fluid.hero-section {
+    padding: 0;
+    margin: 0;
+}
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: -1;
+}
+.hero-content {
+    max-width: 80%;
+    text-align: center;
+    padding: 20px;
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+}
+/* Hero Text Styles */
+.hero-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+}
+
+/* Remove extra padding */
+.container-fluid.hero-section {
+    padding-top: 0;
+}
+.modal-dialog {
+    max-width: 70% !important; 
+}
+
+.modal-body {
+    padding: 20px;
+}
+.modal.fade.show {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.hero-content .quote {
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #0be1ff; 
+    margin-top: 20px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
+}
+.quote-container {
+    position: absolute;
+    bottom: 20px; /* Position it near the bottom */
+    left: 50%;
+    transform: translateX(-50%); /* Centers it horizontally */
+    width: 100%;
+}
+
+.quote {
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #df8aff; 
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
+    text-align: center;
+}

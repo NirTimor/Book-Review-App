@@ -1,0 +1,7 @@
+fastapi~=0.115.8
+motor~=3.7.0
+pydantic~=2.10.6
+pymongo~=4.11.1
+requests~=2.32.3
+passlib~=1.7.4
+PyJWT~=2.10.1

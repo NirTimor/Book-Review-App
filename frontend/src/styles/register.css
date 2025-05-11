@@ -1,0 +1,56 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.register-page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('../../public/library.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.register-container {
+  max-width: 400px;
+  width: 100%;
+  padding: 30px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+}
+
+.form-control {
+  border-radius: 4px;
+}
+
+.register-button {
+  width: 100%;
+  padding: 10px;
+}
+
+.register-link {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.register-link a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
